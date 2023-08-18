@@ -31,4 +31,34 @@
 .header {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.header input {
+  margin: 0 1rem;
+}
+
+.greeting-area {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-template-rows: 30px 1fr;
+}
+
+.greeting-area img {
+  margin: 4px;
+  grid-row: span 2;
+}
+
+.greeting-area p {
+  font-size: larger;
+}
+
+.greeting-area .greeting {
+  font-size: smaller;
+  align-self: end;
+}
+
+.header button {
+  padding: .3rem .7rem;
+  margin: .3rem;
 }
