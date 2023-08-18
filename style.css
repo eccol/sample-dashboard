@@ -62,3 +62,40 @@
   padding: .3rem .7rem;
   margin: .3rem;
 }
+
+/* Body */
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 15rem;
+  background-color: rgb(211, 211, 211);
+}
+
+.your-projects {
+  grid-row: span 2;
+}
+
+.project-card-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+}
+
+.card {
+  height: 200px;
+}
+
+.your-projects,
+.announcements,
+.trending {
+  padding: 1rem;
+}
+
+.card,
+.announcement-container,
+.trend-container {
+  padding: 25px;
+  margin: 2px;
+  background-color: white;
+  border-radius: 25px;
+}
