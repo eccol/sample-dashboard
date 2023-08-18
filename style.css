@@ -7,18 +7,28 @@
 .container {
   display: grid;
   grid-template-columns: 15rem 1fr;
-  grid-template-rows: 1fr 8fr;
+  grid-template-rows: 10rem 1fr;
 }
+
+/* Sidebar */
 
 .sidebar {
   grid-row: span 2;
   background-color: rgb(48, 179, 255);
   color: white;
   display: grid;
+  grid-auto-rows: min-content;
   gap: 2rem;
 }
 
 .sidebar li {
   padding: 5px;
   font-weight: bold;
+}
+
+/* Header */
+
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
