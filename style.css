@@ -8,6 +8,7 @@
   --theme-color: rgb(25, 146, 212);
   --secondary-color: rgb(240, 180, 41);
   --bg-color: rgb(226, 232, 240);
+  --shadow-color: rgb(189, 189, 189);
 }
 
 .container {
@@ -35,9 +36,12 @@
 /* Header */
 
 .header {
+  padding-left: 2rem;
   display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: center;
+  box-shadow: 2px 3px 3px var(--shadow-color);
+  z-index: 1;
 }
 
 .header input {
@@ -117,7 +121,11 @@
 
 .announcement,
 .trend {
-  margin: 1rem;
+  margin: 0.5rem;
+}
+
+.announcement-container hr {
+  margin: 1rem 0px;
 }
 
 .card,
@@ -127,7 +135,7 @@
   margin: 2px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 2px 3px 3px lightgray;
+  box-shadow: 2px 3px 3px var(--shadow-color);
 }
 
 h2 {
@@ -147,12 +155,18 @@ h2 {
   font-size: 0.8rem;
 }
 
+.trend-container {
+  display: grid;
+  gap: 0.25rem;
+}
+
 .trend {
   display: grid;
-  grid-template-columns: 40px 1fr;
+  grid-template-columns: min-content 1fr;
 }
 
 .trend img {
   width: 40px;
+  margin-right: 1rem;
   grid-row: span 2;
 }
