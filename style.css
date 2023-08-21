@@ -9,6 +9,7 @@
   --secondary-color: rgb(240, 180, 41);
   --bg-color: rgb(226, 232, 240);
   --shadow-color: rgb(189, 189, 189);
+  --description-font-color: rgb(99, 99, 99);
 }
 
 .container {
@@ -69,6 +70,10 @@
   padding: .4rem;
 }
 
+.greeting {
+  font-weight: bold;
+}
+
 .greeting-area {
   display: grid;
   grid-template-columns: 110px 1fr;
@@ -110,6 +115,10 @@
   display: grid;
   grid-template-columns: 1fr 20rem;
   background-color: var(--bg-color);
+}
+
+.body p {
+  color: var(--description-font-color);
 }
 
 .your-projects {
