@@ -4,6 +4,12 @@
   font-family: sans-serif;
 }
 
+:root {
+  --theme-color: rgb(25, 146, 212);
+  --secondary-color: rgb(240, 180, 41);
+  --bg-color: rgb(226, 232, 240);
+}
+
 .container {
   display: grid;
   grid-template-columns: 15rem 1fr;
@@ -14,7 +20,7 @@
 
 .sidebar {
   grid-row: span 2;
-  background-color: rgb(48, 179, 255);
+  background-color: var(--theme-color);
   color: white;
   display: grid;
   grid-auto-rows: min-content;
@@ -68,7 +74,7 @@
 .body {
   display: grid;
   grid-template-columns: 1fr 15rem;
-  background-color: rgb(211, 211, 211);
+  background-color: var(--bg-color);
 }
 
 .your-projects {
