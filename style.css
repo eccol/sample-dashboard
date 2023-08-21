@@ -98,7 +98,8 @@
 }
 
 .card {
-  height: 200px;
+  /* height: 200px; */
+  border-left: 8px solid var(--secondary-color);
 }
 
 .your-projects,
@@ -113,5 +114,5 @@
   padding: 25px;
   margin: 2px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 8px;
 }
