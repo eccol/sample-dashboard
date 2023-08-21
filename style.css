@@ -90,7 +90,7 @@
 
 .body {
   display: grid;
-  grid-template-columns: 1fr 15rem;
+  grid-template-columns: 1fr 20rem;
   background-color: var(--bg-color);
 }
 
@@ -115,6 +115,11 @@
   padding: 1rem;
 }
 
+.announcement,
+.trend {
+  margin: 1rem;
+}
+
 .card,
 .announcement-container,
 .trend-container {
@@ -123,4 +128,31 @@
   background-color: white;
   border-radius: 8px;
   box-shadow: 2px 3px 3px lightgray;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+}
+
+.body-side h3 {
+  font-size: 1rem;
+}
+
+.body-side p {
+  font-size: 0.8rem;
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+
+.trend img {
+  width: 40px;
+  grid-row: span 2;
 }
