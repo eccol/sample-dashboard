@@ -44,6 +44,13 @@
   margin: 0 1rem;
 }
 
+#searchbar {
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 8px;
+  padding: .4rem;
+}
+
 .greeting-area {
   display: grid;
   grid-template-columns: 110px 1fr;
