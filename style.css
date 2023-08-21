@@ -30,7 +30,7 @@
 
 .sidebar li {
   padding: 5px;
-  font-weight: bold;
+  font-weight: 550;
 }
 
 /* Header */
@@ -42,6 +42,20 @@
   align-items: center;
   box-shadow: 2px 3px 3px var(--shadow-color);
   z-index: 1;
+}
+
+.notification-area {
+  display: flex;
+  align-items: center;
+}
+
+.header .username {
+  font-weight: bold;
+}
+
+.greeting-area .username {
+  margin-top: 5px;
+  font-size: 1.6rem;
 }
 
 .header input {
@@ -165,7 +179,7 @@ h2 {
   grid-template-columns: min-content 1fr;
 }
 
-.trend img {
+.avatar-sm {
   width: 40px;
   margin-right: 1rem;
   grid-row: span 2;
