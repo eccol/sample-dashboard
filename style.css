@@ -30,8 +30,19 @@
 }
 
 .sidebar li {
-  padding: 5px;
+  padding: 0.6rem 0;
   font-weight: 550;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.icon {
+  width: 1.1rem;
+}
+
+.sidebar .icon {
+  margin: 0 1rem
 }
 
 /* Header */
@@ -45,9 +56,19 @@
   z-index: 1;
 }
 
+.search-area {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
 .notification-area {
   display: flex;
   align-items: center;
+}
+
+.notification-area .icon {
+  margin-right: 1rem;
 }
 
 .header .username {
